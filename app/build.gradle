@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+// 内部分包
+apply plugin: 'micro-module'
 
 android {
     buildToolsVersion "27.0.1"
@@ -25,4 +27,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test:runner:1.0.2'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+microModule {
+    include ":common"
+    include ":core"
+    include ":fleet"
+    include ":feed"
+    include ":me"
+    include ":message"
+    include ":userinfo"
 }

@@ -15,7 +15,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.3.3'
 
         //pins分包
-//        classpath 'com.eastwood.tools.plugins:micro-module:1.1.0'
+        classpath "com.kaihei.baoji:micro-module:1.0.13"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
